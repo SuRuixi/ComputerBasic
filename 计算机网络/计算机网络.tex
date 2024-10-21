@@ -1,8 +1,38 @@
 % This document is compiled using pdfLaTeX
 % You can switch XeLaTeX/pdfLaTeX/LaTeX/LuaLaTeX in Settings
-
 \documentclass{article}
+\usepackage{ctex}
+\usepackage{csquotes} % 对于智能引用符号
+\usepackage[backend=biber,style=numeric]{biblatex} % 使用biblatex和biber
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{marginnote}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{todonotes}
 \usepackage[utf8]{inputenc}
+\usepackage{url} % 加载url包
+
+% 设置页边距
+\geometry{
+    left=1.5cm,         % 左边距
+    right=3cm,        % 右边距
+    top=2.5cm,          % 上边距
+    bottom=2.5cm        % 下边距
+}
+
+\lstset{
+  language=Python,      % 语言类型
+  basicstyle=\tt, %使用teletype字体
+}
+
 
 \title{Title}
 \author{Your Name}
